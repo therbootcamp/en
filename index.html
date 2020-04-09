@@ -2,6 +2,32 @@
 <html lang="en">
 
 <head>
+  <script>
+    //"mailto:therbootcamp@gmail.com?subject=Preregistration for R for Data Science&amp;body=I would like to preregister for the next R Bootcamp 'Statistics with R'."
+    //var ml_text = "DE | Apr 3/4 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    //var ml_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
+    var i2r_text = "DE | Aug 28 | Preregister";
+    var i2r_link = "mailto:therbootcamp@gmail.com?subject=Preregistration for Introduction to modern data analytics with R&amp;body=I would like to preregister for the next R Bootcamp 'Introduction to modern data analytics with R."
+    var i2r_font = "lighter";
+    var expl_text = "DE | Sep 4/5 | Preregister";
+    var expl_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative data analysis with R&amp;body=I would like to preregister for the next R Bootcamp 'Explorative data analysis with R."
+    var expl_font = "lighter";
+    var stat_text = "DE | May 8/9 | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var stat_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung"
+    var stat_font = "bolder";
+    var ml_text = "DE | Oct 23/24 | Preregister";
+    var ml_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Machine learning with R&amp;body=I would like to preregister for the next R Bootcamp 'Machine learning with R'."
+    var ml_font = "lighter";
+    var rep_text = "DE | Jun 5/6 | Register";
+    var rep_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/reporting-with-r-283873#collapsible-heading-anmeldung"
+    var rep_font = "bolder";
+
+    // running link
+    var run_link = "https://therbootcamp.github.io/ML_2020Apr/"
+    var run_style = '' // margin-bottom:0px;
+    var run_style2 = 'none' // ''
+  </script>
+
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -97,8 +123,7 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Learn Data Science with R</div>
-        <!---<div class="intro-heading text-uppercase">The R Bootcamp</div>--->
-        <div class="intro-heading text-uppercase" style='margin-bottom:0px;'>The R Bootcamp<br><a href="https://therbootcamp.github.io/ML_2020Apr/"><font style="font-size:40%;line-height:50px;color:#EA4B68;vertical-align: text-top;text-transform: lowercase;">...running...</font></a></div>
+        <div class="intro-heading text-uppercase" id="run">The R Bootcamp<br><a id="run2" href="https://therbootcamp.github.io/ML_2020Apr/"><font id="run3" style="font-size:40%;line-height:50px;color:#EA4B68;vertical-align: text-top;text-transform: lowercase;">...running...</font></a></div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Learn more</a>
       </div>
     </div>
@@ -192,9 +217,7 @@
                 </div>
                 </a>
                 <div class="timeline-dates">
-                  <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung">DE | Mar 11 | Register</a><br>--->
-                  <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Pregistration Introduction to modern data analytics with R&amp;body=I would like to preregister for the next R Bootcamp 'Introduction to modern data analytics with R' on March 11, 2020.">DE | Mar 11 | Preregister</a><br>--->
-                  <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Pregistration Introduction to modern data analytics with R&amp;body=I would like to preregister for the next R Bootcamp 'Introduction to modern data analytics with R' on August 28, 2020.">DE | Aug 28 | Preregister</a>
+                  <a class="date" id="i2r"></a>
                 </div>
               </div>
             </li>
@@ -206,7 +229,7 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>Explorative Dataanalysis with R</h4>
+                  <h4>Explorative data analysis with R</h4>
                   <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">990CHF @ Uni Basel</p>
                 </div>
                 <div class="timeline-body">
@@ -220,8 +243,7 @@
                 </div>
                 </a>
                 <div class="timeline-dates">
-                  <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/explorative-datenanalyse-mit-r-272006#collapsible-heading-anmeldung">DE | Feb 14/15 | Register</a>--->
-                  <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Preregistration for R for Data Science&amp;body=I would like to preregister for the next R Bootcamp 'R for Data Science'.">DE | tba | Preregister</a>
+                  <a class="date" id="expl"></a>
                 </div>
               </div>
             </li>
@@ -247,8 +269,7 @@
                   </a>
                 </div>
                 <div class="timeline-dates">
-                  <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung">DE | Mai 8/9 | Register<p style="border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px">Online course</p></a>
-                  <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Preregistration for R for Data Science&amp;body=I would like to preregister for the next R Bootcamp 'Statistics with R'.">DE | Mar 20/21 | Preregister</a>--->
+                  <a class="date" id="stat"></a>
                 </div>
               </div>
             </li>
@@ -260,7 +281,7 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>Machine Learning with R</h4>
+                  <h4>Machine learning with R</h4>
                   <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">990CHF @ Uni Basel</p>
                 <div class="timeline-body">
                   <a class="course-link" data-toggle="modal" href="#MLwR">
@@ -273,8 +294,7 @@
                   </a>
                 </div>
                 <div class="timeline-dates">
-                  <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung">DE | Apr 3/4 | Register<p style="border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px">Online course</p></a>
-                  <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Preregistration for Machine Learning with R&amp;body=I would like to preregister for the next R Bootcamp 'Machine Learning with R'.">DE | Apr 3/4 | Preregister</a>--->
+                  <a class="date" id="ml"></a>
                 </div>
               </div>
             </li>
@@ -302,8 +322,7 @@
                 </div>
                 </a>
                 <div class="timeline-dates">
-                  <a class="date" href="https://advancedstudies.unibas.ch/courses/course/reporting-with-r-283873#collapsible-heading-anmeldung">DE | Jun 5/6 | Register</a>
-                  <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Explorative Datenanalyse mit R' voranmelden.">DE | Feb 14/15 | Voranmelden</a>--->
+                  <a class="date" id="rep"></a>
                 </div>
               </div>
             </li>
@@ -916,9 +935,7 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/0.png" alt="">
                 <h4  style="padding:0px;margin:0px">Introduction to modern data analytics with R</h4>
                 <p class="item-intro text-muted">Learn Data Science with R from the ground up</p>
-                <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung">DE | Mar 11 | Register</a><br>--->
-                <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Pregistration Introduction to modern data analytics with R&amp;body=I would like to preregister for the next R Bootcamp 'Introduction to modern data analytics with R' on March 11, 2020.">DE | Mar 11 | Preregister</a><br>--->
-                <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Pregistration Introduction to modern data analytics with R&amp;body=I would like to preregister for the next R Bootcamp 'Introduction to modern data analytics with R' on Feburary 7, 2020.">DE | Feb 7 | Preregister</a>
+                <a class="date" id="i2r2"></a>
                 <br><br>
                 <p class="head">Description</p>
                 <p class="text-muted entry">Data are the gold of the 21st century. With access to data and the knowledge to analyze it, you may contribute to the advance of science and technology in health care or via the use of intelligent marketing secure critical advantages over your competition. No matter what your goal is, whether you work in management or R&D, expertise in the area of modern data analytics is becoming a decisive faktor. This afternoon course offers an entry point into the world of Data Science and Big Data through the open programming language R, which not only has been developed for data analytics, but also is one of the most sought after skills in this field. You will learn the the basic principles of the R language and you will begin to use them in several small interactive session. In the end, you will also learn how to best continue your journey into modern data analytics.</p>
@@ -1034,10 +1051,9 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/1.png" alt="">
-                <h4  style="padding:0px;margin:0px">Explorative Dataanalysis with R</h4>
+                <h4  style="padding:0px;margin:0px">Explorative data analysis with R</h4>
                 <p class="item-intro text-muted">Explore and visualize data with R</p>
-                <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/explorative-datenanalyse-mit-r-272006#collapsible-heading-anmeldung">DE | Feb 14/15 | Register</a>--->
-                <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Preregistration for Explorative Data Analysis with R&amp;body=I would like to preregister for the next R Bootcamp 'Explorative Data Analysis with R'.">DE | tba | Preregister</a>
+                <a class="date" id="expl2"></a>
                 <br><br>
                 <p class="head">Description</p>
                 <p class="text-muted entry">Every data-driven project begins with gathering and exploring data. This fundamental step encompasses the cleaning and joining of multiple data sets and the visualization of descriptive patterns present within the combined data. For tasks like these no analytics tool can hold a candle to the programming language R. In this packaged you will learn all elements of gathering and exploring data with R. You will learn how to read data from your hard drive or a remote location, how to clean and organize data, how to run simple descriptive analyses, and, finally, how to create aesthetically-pleasing, publication-ready visualization.</p>
@@ -1155,9 +1171,7 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/2.png" alt="">
                 <h4  style="padding:0px;margin:0px">Statistics with R</h4>
                 <p class="item-intro text-muted">Learn to make data-driven decisions with R</p>
-
-                <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung">DE | May 8/9 | Register<p style="border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px">Online course</p></a>
-                <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Preregistration for R for Data Science&amp;body=I would like to preregister for the next R Bootcamp 'Statistics with R'.">DE | Mar 20/21 | Preregister</a>--->
+                <a class="date" id="stat2"></a>
                 <br><br>
 
                 <p class="head">Description</p>
@@ -1281,11 +1295,9 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/3.png" alt="">
-                <h4  style="padding:0px;margin:0px">Machine Learning with R</h4>
+                <h4  style="padding:0px;margin:0px">Machine learning with R</h4>
                 <p class="item-intro text-muted">Learn to build predictive algorithms with R</p>
-                <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung">DE | Apr 3/4 | Register<p style="border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px">Online course</p></a>
-                <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Preregistration for Machine Learning with R&amp;body=I would like to preregister for the next R Bootcamp 'Machine Learning with R'.">DE | Apr 3/4 | Preregister</a>--->
-
+                <a class="date" id="ml2"></a>
                 <br><br>
 
                 <p class="head">Description</p>
@@ -1398,12 +1410,8 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/4.png" alt="">
                 <h4  style="padding:0px;margin:0px">Reporting with R</h4>
                 <p class="item-intro text-muted">Learn to create dynamic, interactive Reports with R.</p>
-
-                <a class="date" href="https://advancedstudies.unibas.ch/courses/course/reporting-with-r-283873#collapsible-heading-anmeldung">DE | Jun 5/6 | Register</a>
-                <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Maschinelles Lernen mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Maschinelles Lernen mit R' voranmelden.">DE | Apr 3/4 | Voranmelden</a>--->
-
+                <a class="date" id="rep2"></a>
                 <br><br>
-
                 <p class="head">Description</p>
                 <p class="text-muted entry">One of the most important tasks in data-driven projects is the communication of the results. This can be in the form of reports, presentations or interactive dashboards. The programming language R and R Studio are among the best tools available for this purpose. In this intensive two-day course, you will learn how to use RMarkdown to easily create and design dynamic reports and slides in different formats such as .pdf, .docx or .pptx. You will learn how to create analyses, visualizations, and text in a single document that can be reproduced as desired. You will also learn how to create interactive dashboards with Shiny so that you can easily explore data and visualisations and make them available for exploration.</p>
 
@@ -1849,7 +1857,7 @@
                 <br><br><br>
 
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/3.png" alt="">
-                <h4  style="padding:0px;margin:0px">Machine Learning with R</h4>
+                <h4  style="padding:0px;margin:0px">Machine learning with R</h4>
                 <p class="item-intro text-muted" style="margin-bottom:20px">Learn to build predictive algorithms with R</p>
 
                 <a class="arxiv" target="_blank" href="https://therbootcamp.github.io/ML_2019Oct/">October 2019 | 2-day</a><br>
@@ -2045,6 +2053,38 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+  <!-- COURSE LINKS COURSE LINKS COURSE LINKS COURSE LINKS-->
+  <script>
+    var ir = document.getElementById("i2r");
+    var ir2 = document.getElementById("i2r2");
+    i2r.innerHTML = i2r2.innerHTML = i2r_text;
+    i2r.href = i2r2.href = i2r_link;
+    i2r.style.fontWeight = i2r2.style.fontWeight = i2r_font;
+    var expl = document.getElementById("expl");
+    var expl2 = document.getElementById("expl2");
+    expl.innerHTML = expl2.innerHTML = expl_text;
+    expl.href = expl2.href = expl_link;
+    expl.style.fontWeight = expl2.style.fontWeight = expl_font;
+    var stat = document.getElementById("stat");
+    var stat2 = document.getElementById("stat2");
+    stat.innerHTML = stat2.innerHTML = stat_text;
+    stat.href = stat2.href = stat_link;
+    stat.style.fontWeight = stat2.style.fontWeight = stat_font;
+    var ml = document.getElementById("ml")
+    var ml2 = document.getElementById("ml2");
+    ml.innerHTML = ml2.innerHTML = ml_text;
+    ml.href = ml2.href = ml_link;
+    ml.style.fontWeight = ml2.style.fontWeight = ml_font;
+    var rep = document.getElementById("rep");
+    var rep2 = document.getElementById("rep2");
+    rep.innerHTML = rep2.innerHTML = rep_text;
+    rep.href = rep2.href = rep_link;
+    rep.style.fontWeight = rep2.style.fontWeight = rep_font;
+    document.getElementById("run").style = run_style;
+    document.getElementById("run2").href = run_link;
+    document.getElementById("run3").style.display = run_style2;
+  </script>
 
 </body>
 
