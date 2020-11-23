@@ -8,21 +8,24 @@
     //var ml_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
     //DE | tba | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>
     //mailto:therbootcamp@gmail.com?subject=Preregistration for Reporting with R&amp;body=I would like to preregister for the next R Bootcamp 'Reporting with R'.
-    var i2r_text = "DE | tba | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
+    var i2r_text = "DE | Feb 19 | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
     var i2r_link = "https://advancedstudies.unibas.ch/courses/course/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung"
-    var i2r_font = "lighter";
-    var expl_text = "DE | Sep tba | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
+    var i2r_font = "bolder";
+    var i2r_2nd_text = "DE | Apr 2 | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var i2r_2nd_link = "mailto:therbootcamp@gmail.com?subject=Register for Einführung in die moderne Datenanalyse mit R&amp;body=I [NAME, ADDRESS] would like to register for the next R Bootcamp 'Einführung in die moderne Datenanalyse mit R' on April 2nd, 2021."
+    var i2r_2nd_font = "bolder"; //lighter
+    var expl_text = "DE | Mar 19/20 | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
     var expl_link = "https://advancedstudies.unibas.ch/courses/course/explorative-datenanalyse-mit-r-272006#collapsible-heading-anmeldung"
-    var expl_font = "lighter";
-    var stat_text = "DE | May tba | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
+    var expl_font = "bolder";
+    var stat_text = "DE | Apr 16/17 | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
     var stat_link = "https://advancedstudies.unibas.ch/courses/course/statistik-mit-r-233189#collapsible-heading-anmeldung"
-    var stat_font = "lighter";
-    var ml_text = "DE | Oct tba | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
+    var stat_font = "bolder";
+    var ml_text = "DE | Mai 19/20 | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
     var ml_link = "https://advancedstudies.unibas.ch/courses/course/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
-    var ml_font = "lighter";
-    var rep_text = "DE | tba | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
+    var ml_font = "bolder";
+    var rep_text = "DE | Feb 26/27 | Register<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online course</p>";
     var rep_link = "https://advancedstudies.unibas.ch/courses/course/reporting-with-r-webinar-283873#collapsible-heading-anmeldung"
-    var rep_font = "lighter"; // "lighter" or "bolder"
+    var rep_font = "bolder"; // "lighter" or "bolder"
 
     // running link
     var run_link = "https://therbootcamp.github.io/RmR_2020Jun/"
@@ -220,6 +223,7 @@
                 </a>
                 <div class="timeline-dates">
                   <a class="date" id="i2r"></a>
+                  <a class="date" id="i2r_no2"></a>
                 </div>
               </div>
             </li>
@@ -2098,6 +2102,12 @@
     rep.innerHTML = rep2.innerHTML = rep_text;
     rep.href = rep2.href = rep_link;
     rep.style.fontWeight = rep2.style.fontWeight = rep_font;
+    var ir_no2 = document.getElementById("i2r_no2");
+    ir_no2.innerHTML = i2r_no2_text;
+    ir_no2.href = i2r_no2_link;
+    ir_no2.style.fontWeight = i2r_no2_font;
+
+    // running link
     document.getElementById("run").style = run_style;
     document.getElementById("run2").href = run_link;
     document.getElementById("run3").style.display = run_style2;
